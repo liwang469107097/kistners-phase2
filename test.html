@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Kistner's Flowers: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body, div, header, main, footer {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #page {
+        display: grid;
+        grid-template-columns: 1fr 800px 1fr;
+      }
+      header {
+        height: 200px;
+        width: 800px;
+        background-image: url("./public/banner.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      }
+      nav > a {
+        flex-grow: 1;
+        display: block;
+        box-sizing: border-box;
+        border: 1px solid red;
+        padding: 0.5rem 1rem;
+      }
+      nav > .tribars {
+        display: none;
+      }
+      nav > .tribars > hr {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        border: none;
+      }
+      @media(max-width: 1000px) {
+        #page {
+          display: flex;
+          flex-direction: column;
+          width: 800px;
+          margin: 0 auto;
+        }
+        nav {
+          flex-direction: row;
+          text-align: center;
+        }
+      }
+      @media(max-width: 800px) {
+        header {
+          height: 0px;
+          width: 100%;
+          padding-top: 25%;
+        }
+        #page{
+          width: 100%;
+        }
+        nav {
+          flex-direction: column;
+          text-align: left;
+        }
+        nav > a {
+          display: none;
+        }
+        nav > .tribars {
+          display: block;
+          align-self: flex-end;
+        }
+        nav:hover > a {
+          display: block;
+        }
+        nav:hover > .tribars {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div></div>
+      <header>HED</header>
+      <div></div>
+
+      <main>MAIN</main>
+      <div></div>
+    </div>
+  </body>

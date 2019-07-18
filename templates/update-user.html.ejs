@@ -1,0 +1,32 @@
+<h1>Update User</h1>
+    <form method="POST">
+
+        <div class="error-message">
+            <%= errorMessage %>
+        </div>
+        <fieldset>
+            <label for="oldUsername">Old Username:</label>
+            <input type="text" name="oldUsername" />
+        </fieldset>
+        
+        <fieldset>
+            <label for="username">Username:</label>
+            <input type="text" name="newUsername" />
+        </fieldset>
+        
+        <fieldset>
+            <label for="oldRole">Old Role:</label>
+            <input type="text" name="oldRole"/>
+        </fieldset>
+        <fieldset>
+            <label for="newRole">New Role:</label>
+            <input type="text" name="newRole"/>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Update User"/>
+        </fieldset>
+        <div>
+            <p>Default Password: 111111</p>
+            <p>Please type "Admin" or "User" for roles</p>
+        </div>
+    </form>

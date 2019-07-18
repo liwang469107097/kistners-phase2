@@ -1,0 +1,26 @@
+<h1>Sign In</h1>
+    <form method="POST">
+
+        <div class="error-message">
+            <%= errorMessage %>
+        </div>
+
+        <fieldset>
+            <label for="username">Username:</label>
+            <input type="text" name="username" />
+        </fieldset>
+
+        <fieldset>
+            <label for="passsword">Password:</label>
+            <input type="password" name="password"/>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Sign In"/>
+        </fieldset>
+        <div>
+            <p>Try admin username: admin, password: 123456</p>
+            <p>customer username: user, password: 123456</p>
+            <p>It successfully signs in with changing http:// to https://</p>
+        </div>
+    </form>
